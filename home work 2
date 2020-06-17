@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
-studenttype=np.type({
+studenttype=np.dtype({
   'names':['name.'chinese','math','english'],
   'formats'=['S32,'i','i','i',]})
 students=np.array(["Zhangfei",68,65,30),("GuanYu",95,76,98),("LiuBei",98,86,88),("DianWei",90,88,77),("XuChu",80,90,90)],dtype=studenttype)
-print("语文平均：%d"%students["chinese"].mean())
+print("语文平均:%d"%students["chinese"].mean())
 print("数学平均:%d" %students["math"].mean())
 print("英语平均:%d" %students["english"].mean())
 print("语文最大:%d" %students["chinese"].max())
